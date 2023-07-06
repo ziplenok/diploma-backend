@@ -219,6 +219,9 @@ public class EducationalProgramServiceImp implements EducationalProgramService {
         return educationalProgramDtos;
     }
 
+
+
+
     private String getGroupingByKey(EducationalProgramDto eduPr) {
         return eduPr.educationalGroupDto().prof1() + " - " + eduPr.educationalGroupDto().prof2();
 

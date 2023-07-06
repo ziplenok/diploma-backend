@@ -27,6 +27,8 @@ public record UniversityDto(
 
         Boolean kafedra,
 
-        Boolean dormitory
+        Boolean dormitory,
+
+        Boolean in_prediction
 ) {
 }

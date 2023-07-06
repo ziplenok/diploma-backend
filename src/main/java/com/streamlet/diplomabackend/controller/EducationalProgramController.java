@@ -21,6 +21,7 @@ public class EducationalProgramController {
 
     private final EducationalProgramService educationalProgramService;
 
+
     @GetMapping("{language}")
     public ResponseEntity<List<EducationalProgramDto>> getAllPrograms(@PathVariable("language") String language) {
         List<EducationalProgramDto> programList = educationalProgramService.getAllEducationalPrograms(language);

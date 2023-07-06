@@ -68,6 +68,9 @@ public class University {
     @Column(name = "is_active")
     private Boolean isActive;
 
+    @Column(name = "in_prediction")
+    private Boolean inPrediction;
+
     @OneToMany(mappedBy = "university")
     Set<EducationalProgram> educationalPrograms;
 }

@@ -42,7 +42,8 @@ public class UniversityServiceImp implements UniversityService {
                         university.getRegion(),
                         university.getPassScore(),
                         university.getKafedra(),
-                        university.getDormitory()
+                        university.getDormitory(),
+                        university.getInPrediction()
                 );
                 universityDtos.add(universityDTO);
             }
@@ -61,7 +62,8 @@ public class UniversityServiceImp implements UniversityService {
                         university.getRegion(),
                         university.getPassScore(),
                         university.getKafedra(),
-                        university.getDormitory()
+                        university.getDormitory(),
+                        university.getInPrediction()
                 );
 
                 universityDtos.add(universityDTO);

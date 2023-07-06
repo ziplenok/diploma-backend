@@ -15,6 +15,9 @@ public interface EducationalProgramRepository
     @Query("SELECT edup FROM EducationalProgram edup WHERE edup.university.id = ?1")
     List<EducationalProgram> getEduProgramByUniverId(Long universityId);
 
+    @Query("SELECT edup FROM EducationalProgram edup WHERE edup.eduGroupId.id = ?1")
+    List<EducationalProgram> getEduProgramByEduGroupId(Long eduGroupId);
+
     @Query("SELECT edup FROM EducationalProgram edup")
     List<EducationalProgram> getAllEducationalPrograms();
 
@@ -25,5 +28,7 @@ public interface EducationalProgramRepository
     @Query("SELECT edup FROM EducationalProgram edup, EducationalGroup edugr " +
             "WHERE edup.eduGroupId = edugr AND edugr.prof1Kz = ?1 AND edugr.prof2Kz = ?2")
     List<EducationalProgram>getEducationalProgramsByCombinationKz(String prof1, String prof2);
+
+
 
 }

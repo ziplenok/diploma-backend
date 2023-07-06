@@ -12,4 +12,6 @@ public interface EducationalProgramService {
     List<EducationalProgramDto> getAllEducationalPrograms(String language);
 
     List<EducationalProgramDto> getEducationalProgramsByCombination(String language, String pro1, String prof2);
+
+//    List<>
 }
